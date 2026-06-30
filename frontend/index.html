@@ -18,8 +18,16 @@
                 <label style="font-family: monospace; font-size: 0.85rem; display: block; margin-bottom: 0.5rem;">CREDENTIAL // PASSWORD</label>
                 <input type="password" id="password" required style="width: 100%; background: #121212; border: 1px solid #222; color: #fff; padding: 0.75rem; font-size: 1rem;">
             </div>
-            <button type="submit" class="mode-toggle-btn" style="width: 100%; padding: 1rem;">Authenticate</button>
-            <p id="authFeedback" style="font-family: monospace; font-size: 0.85rem; color: var(--accent-color);"></p>
+
+            <!-- The primary submission button -->
+            <button type="submit" id="submitBtn" class="mode-toggle-btn" style="width: 100%; padding: 1rem;">Authenticate (Login)</button>
+
+            <!-- Missing piece: Quick text link to swap to registration mode -->
+            <p style="font-family: monospace; font-size: 0.85rem; text-align: center;">
+                <span id="formToggle" style="color: #888; cursor: pointer; text-decoration: underline;">Need an account? Register here</span>
+            </p>
+    
+            <p id="authFeedback" style="font-family: monospace; font-size: 0.85rem; color: var(--accent-color); text-align: center;"></p>
         </form>
     </main>
     <script src="js/auth.js"></script>
