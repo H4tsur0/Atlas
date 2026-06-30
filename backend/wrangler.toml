@@ -1,0 +1,13 @@
+name = "atlas-backend"
+main = "src/index.ts"
+compatibility_date = "2026-06-30"
+
+# 1. Bind your distributed D1 SQLite Database
+[[d1_databases]]
+binding = "DB"
+database_name = "atlas-db"
+database_id = "your-actual-d1-database-uuid-here"
+
+# 2. Automate the News Pipeline at 6 AM every single morning
+[[triggers.crons]]
+crons = ["0 6 * * *"]

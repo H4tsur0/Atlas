@@ -1,0 +1,9 @@
+{
+  "name": "atlas-backend",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20260628.0",
+    "typescript": "^5.4.5",
+    "wrangler": "^3.60.0"
+  }
+}

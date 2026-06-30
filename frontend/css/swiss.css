@@ -1,0 +1,90 @@
+/* --- Swiss Design Core Systems --- */
+:root {
+    --bg-color: #0b0b0b;
+    --text-color: #f4f4f4;
+    --text-muted: #888888;
+    --accent-color: #e61919; /* Swiss High-Intent Red */
+    --panel-color: #121212;
+    --border-color: #222222;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.5;
+    padding: 4rem 2rem;
+}
+
+main {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* --- Typography --- */
+h1 {
+    font-size: 4.5rem;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    text-transform: uppercase;
+    line-height: 0.9;
+    margin-bottom: 2rem;
+    border-bottom: 4px solid var(--text-color);
+    padding-bottom: 1rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 1rem;
+}
+
+/* --- Layout Grid --- */
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.brief-card {
+    border-top: 1px solid var(--border-color);
+    padding: 1.5rem 0;
+    margin-bottom: 1.5rem;
+}
+
+.brief-meta {
+    font-family: monospace;
+    font-size: 0.85rem;
+    color: var(--accent-color);
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+.brief-summary {
+    color: var(--text-muted);
+    margin-top: 0.75rem;
+}
+
+/* --- Controls & Utilities --- */
+.mode-toggle-btn {
+    background: none;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    padding: 0.5rem 1.5rem;
+    font-family: monospace;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.mode-toggle-btn:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+}

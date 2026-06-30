@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT ATLAS — BRIEFING</title>
+    <link rel="stylesheet" href="css/swiss.css">
+</head>
+<body>
+
+    <main>
+        <header style="display: flex; justify-content: space-between; align-items: flex-end;">
+            <h1>Project Atlas</h1>
+            <button id="modeToggle" class="mode-toggle-btn">Switch to Social Mode</button>
+        </header>
+
+        <div class="dashboard-grid">
+            <!-- Left Column: The Daily Feed -->
+            <section id="feedSection">
+                <h2>Morning Feed</h2>
+                <div id="articlesContainer">
+                    <p style="color: var(--text-muted); font-family: monospace;">Loading secure intelligence pipeline...</p>
+                </div>
+            </section>
+
+            <!-- Right Column: System Status or Side Details -->
+            <aside style="border-left: 1px solid var(--border-color); padding-left: 3rem;">
+                <h2>System Analytics</h2>
+                <p style="font-family: monospace; font-size: 0.9rem; color: var(--text-muted);">
+                    Data Engine: Connected<br>
+                    Stack Tier: Edge Distributed<br>
+                    Security Layer: Active
+                </p>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Client-side Logic Scripts -->
+    <script src="js/app.js"></script>
+</body>
+</html>
